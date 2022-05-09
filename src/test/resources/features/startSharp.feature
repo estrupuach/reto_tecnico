@@ -9,4 +9,6 @@
   @scenario1
   Scenario: sign in startSharp and create business unit, meeting
     When he create the business unit and asociate with new meeting
+    |strName|strParentUnit|
+    |business-cristian|Administration|
     Then new meeting is created

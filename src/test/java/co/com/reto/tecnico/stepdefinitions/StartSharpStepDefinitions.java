@@ -1,7 +1,10 @@
 package co.com.reto.tecnico.stepdefinitions;
 
+import co.com.reto.tecnico.model.BusinessUnit;
 import co.com.reto.tecnico.model.LoginModel;
+import co.com.reto.tecnico.tasks.Business;
 import co.com.reto.tecnico.tasks.Login;
+import co.com.reto.tecnico.tasks.Meeting;
 import co.com.reto.tecnico.tasks.StartPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -27,7 +30,11 @@ public class StartSharpStepDefinitions {
     }
 
     @When("^he create the business unit and asociate with new meeting$")
-    public void heCreateTheBusinessUnitAndAsociateWithNewMeeting() throws Exception {
+    public void heCreateTheBusinessUnitAndAsociateWithNewMeeting(List<BusinessUnit> businessUnitList) throws Exception {
+        OnStage.theActorCalled("Admin").attemptsTo(
+                Business.createBusinessUnit(businessUnitList),
+                Meeting.createMeetingAssociateBusiness()
+        );
     }
 
     @Then("^new meeting is created$")
