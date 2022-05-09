@@ -5,8 +5,8 @@ import cucumber.api.SnippetType;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
 import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
-@CucumberOptions (features = "src/test/resources/features/demo.feature",
-        tags = "@tag1",
+@CucumberOptions (features = "src/test/resources/features/startSharp.feature",
+        tags = "@scenario1",
         glue = " co.com.reto.tecnico",
         snippets = SnippetType.CAMELCASE )
 
