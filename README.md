@@ -10,7 +10,7 @@ Se realizara smoke test a las siguientes secciones y/o funciones
 
 Una vez pasado los smoke test, se inicia la creacion del codigo de la prueba automatizada
 
-###Branching
+### Branching
 1. Main : principal
 2. develop : rama desarrollo
 3. feature-reto : rama donde se desarrollara el reto tecnico designado
