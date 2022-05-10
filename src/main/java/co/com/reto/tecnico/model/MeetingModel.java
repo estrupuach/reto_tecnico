@@ -1,22 +1,40 @@
 package co.com.reto.tecnico.model;
 
 public class MeetingModel {
-    private String NameMee;
-    private String NumberMee;
+    private String strNameBusiness;
+    private String strParentUnit;
+    private String nameMeeting;
+    private String numberMeeting;
 
-    public String getStrNameMee() {
-        return NameMee;
+    public String getStrNameBusiness() {
+        return strNameBusiness;
     }
 
-    public void setStrNameMee(String strName) {
-        this.NameMee = strName;
+    public void setStrNameBusiness(String strNameBusiness) {
+        this.strNameBusiness = strNameBusiness;
     }
 
-    public String getStrNumberMee() {
-        return NumberMee;
+    public String getStrParentUnit() {
+        return strParentUnit;
     }
 
-    public void setStrNumberMee(String strNumber) {
-        this.NumberMee = strNumber;
+    public void setStrParentUnit(String strParentUnit) {
+        this.strParentUnit = strParentUnit;
+    }
+
+    public String getNameMeeting() {
+        return nameMeeting;
+    }
+
+    public void setNameMeeting(String nameMeeting) {
+        this.nameMeeting = nameMeeting;
+    }
+
+    public String getNumberMeeting() {
+        return numberMeeting;
+    }
+
+    public void setNumberMeeting(String numberMeeting) {
+        this.numberMeeting = numberMeeting;
     }
 }

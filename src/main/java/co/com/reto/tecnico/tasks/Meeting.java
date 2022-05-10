@@ -27,7 +27,7 @@ public class Meeting implements Task {
                 Click.on(MeetingPage.LIST_MEETING),
                 Click.on(MeetingPage.OPTION_MEETING),
                 Click.on(MeetingPage.BUTTON_CREATE_MEETING),
-                Enter.theValue(meetingModelList.get(0).getStrNameMee()).into(MeetingPage.INPUT_NAME)
+                Enter.theValue(meetingModelList.get(0).getNameMeeting()).into(MeetingPage.INPUT_NAME)
         );
     }
 }
