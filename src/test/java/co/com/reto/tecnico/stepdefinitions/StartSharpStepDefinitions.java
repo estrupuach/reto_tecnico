@@ -2,6 +2,7 @@ package co.com.reto.tecnico.stepdefinitions;
 
 import co.com.reto.tecnico.model.LoginModel;
 import co.com.reto.tecnico.model.MeetingModel;
+import co.com.reto.tecnico.questions.Answer;
 import co.com.reto.tecnico.tasks.Business;
 import co.com.reto.tecnico.tasks.Login;
 import co.com.reto.tecnico.tasks.Meeting;
@@ -10,6 +11,7 @@ import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
@@ -38,6 +40,7 @@ public class StartSharpStepDefinitions {
     }
 
     @Then("^new meeting is created$")
-    public void newMeetingIsCreated() throws Exception {
+    public void newMeetingIsCreated(List<MeetingModel> meetingModelList) throws Exception {
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat(Answer.toThe(meetingModelList)));
     }
 }
