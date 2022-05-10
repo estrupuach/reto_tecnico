@@ -111,7 +111,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-05-2022 16:59</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-05-2022 20:04</span>
     <br style="clear:left"/>
 </div>
 
@@ -160,9 +160,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><i class='fa fa-check-square-o success-icon fa-2x' title='SUCCESS'></i></span>
+                            <span class="outcome-icon"><i class='fa fa-exclamation-triangle error-icon fa-2x' title='ERROR'></i></span>
                             <span class="test-case-title">
-                                <span class="success-color">sign in startSharp and create business unit, meeting
+                                <span class="error-color">sign in startSharp and create business unit, meeting
                                     <span class="related-issue-title"></span>
                                 </span>
                             </span>
@@ -179,27 +179,64 @@
 
     <div id="beforetable"></div>
     <div id="contenttilttle">
+            <div class="screenshotFailure panel panel-danger">
+
+                        <div class="panel-heading title="Cucumber exception: Arity mismatch: Step Definition 'co.com.reto.tecnico.stepdefinitions.StartSharpStepDefinitions.heCreateTheBusinessUnitAndAsociateWithNewMeeting(BusinessUnit),MeetingModel)) in file:/C:/Users/cavendanoc/Documents/reto_tecnico/reto_tecnico/build/classes/java/test/' with pattern [^he create the business unit and asociate with new meeting$] is declared with 2 parameters. However, the gherkin step has 1 arguments [Table:[[strName, strParentUnit, NameMee, NumberMee], [business-cristian, Administration, TestMeeting, abc123]]]. ">
+                            Cucumber exception: Arity mismatch: Step Definition 'co.com.reto.tecnico.stepdefinitions.StartSharpStepDefinitions.heCreateTheBusinessUnitAndAsociateWithNewMeeting(BusinessUnit),MeetingModel)) in file:/C:/Users/cavendanoc/Documents/reto_tecn...
+                        </div>
+                <div><!-- Stack trace -->
+                    <button type="button" class="btn btn-danger" data-toggle="modal"
+                            data-target="#stacktraceModal-overall">
+                        View details
+                    </button>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="stacktraceModal-overall" tabindex="-1" role="dialog"
+                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal"
+                                        aria-label="Close"><span aria-hidden="true">&times;</span>
+                                </button>
+                                <h4 class="modal-title" id="stacktraceModalLabel">
+                                    cucumber.runtime.CucumberException
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                    <h5>
+                                        <pre>Arity mismatch: Step Definition 'co.com.reto.tecnico.stepdefinitions.StartSharpStepDefinitions.heCreateTheBusinessUnitAndAsociateWithNewMeeting(BusinessUnit&gt;,MeetingModel&gt;) in file:/C:/Users/cavendanoc/Documents/reto_tecnico/reto_tecnico/build/classes/java/test/' with pattern [^he create the business unit and asociate with new meeting$] is declared with 2 parameters. However, the gherkin step has 1 arguments [Table:[[strName, strParentUnit, NameMee, NumberMee], [business-cristian, Administration, TestMeeting, abc123]]]. <br>Step text: he create the business unit and asociate with new meeting</pre>
+                                    </h5>
+                                    cucumber.runner.Runner.runPickle(Runner.java
+                                    :80) <br>
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">
+                                    Close
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="panel-body">
+                    <a href="pagesource5935354245959224033.html.txt" target="_blank" class="btn btn-info">HTML Source</a>
+                </div>
+            </div>
         <div class="slider-wrapper theme-default">
             <div id="slider">
-                <img src="0e639cfeea057a36aad07d81cc17847cf8474d0d25cf22d71f19449c6d26c014.png" title="Given that Admin log in in the StartSharp page
+                <img src="707c31425b0cfbc3d94de403469f5795b0c1ae7978bb6720f8c0c04df900ff6e.png" title="Given that Admin log in in the StartSharp page
 | strUsername | strPassword |
 | admin | serenity |" width="1366"/>
-                <img src="93ba5563253d3f86105128e626a06a93d872d6868e5abbb18219f5175eaae471.png" title="Admin opens the Start sharp page" width="1366"/>
+                <img src="c47d7f20254fc3dd4dc7ca96c51d0fc0a94bf6a2114470b9079e0881196dfc12.png" title="Admin opens the Start sharp page" width="1366"/>
                 <img src="624fceb5839e1cb32617fc504fb3cd6319cbad3b017008bc0ecf781d46b66957.png" title="Admin enters 'admin' into Input from write the username" width="1366"/>
-                <img src="cf43710a8cc4e0d10dc92c94f2607212597ae6eb88f69f6a167865216057785c.png" title="Admin enters 'serenity' into Input from write the password" width="1366"/>
-                <img src="e624064f2e5de7c142346652c48eb8cae30e7b3ec3de69cfafd7686bdb95a81b.png" title="Admin clicks on button from get into to page" width="1366"/>
-                <img src="541f786e70134f9c14b67aa2491a8d2d57ac0c90ad7b6ab1f0389524bb7bb534.png" title="When he create the business unit and asociate with new meeting
-| strName | strParentUnit |
-| business-cristian | Administration |" width="1366"/>
-                <img src="6b47e538d4bd5ffbfb66a8de1073ebc3a6e0961f264bc800a9e6b4eb3f927620.png" title="Admin clicks on deyployment the organization list" width="1366"/>
-                <img src="8bcd7963ef41da1b15534605b0c123f8fd00ac68654f8f8825fc697240d96aa4.png" title="Admin clicks on enter session business unit" width="1366"/>
-                <img src="d9878327f1a9a47bb680901a0860fa764bb7584e01f08dcf71e7da12771e3f79.png" title="Admin clicks on show form that create new business" width="1366"/>
-                <img src="2d0ca2739f864519abd95f459e6983b0f25a4653685c7dbae2fd6b257376f152.png" title="Admin enters 'business-cristian' into Here write name of new business" width="1366"/>
-                <img src="bb2719595d3d62bd05f4763ccb0c1ba7c34633f8f96268c3536443ccd69c3a1e.png" title="Admin clicks on open the list the parents units" width="1366"/>
-                <img src="36a718dcf84beb0179736291f46b33204f7714f55504fcfd965a31a4d9611372.png" title="Admin enters 'Administration' into Here write name of parent type business" width="1366"/>
-                <img src="d9f0e66d1eef397516fbcb3e2aaf726cabe8ea8d3c6ef695a648c949e53fa3a9.png" title="Admin types 'ENTER' in Here write name of parent type business" width="1366"/>
-                <img src="541f786e70134f9c14b67aa2491a8d2d57ac0c90ad7b6ab1f0389524bb7bb534.png" title="Admin clicks on save the new business van" width="1366"/>
-                <img src="1a1c53c329d87f9a9b08e3ce2571b7ab2312096c82fcbb6bcbd9e8c17086f511.png" title="Then new meeting is created: <span class='success-color'>SUCCESS</span>" width="1366"/>
+                <img src="926c78a4d6773be0da18a8210f4e8552853b51a6bf34bc051b7e1bc1c78d0c6b.png" title="Admin enters 'serenity' into Input from write the password" width="1366"/>
+                <img src="375b87a4e40400aa6af6a55a1f3850fc0336202b29aa2a5359031728be4abbf1.png" title="Admin clicks on button from get into to page" width="1366"/>
+                <img src="626292325ecee8efa59f760bd245595d96259faecc1db7444d56781b9ea9d257.png" title="When he create the business unit and asociate with new meeting
+| strName | strParentUnit | NameMee | NumberMee |
+| business-cristian | Administration | TestMeeting | abc123 |: <span class='error-color'>ERROR</span>" width="1366"/>
             </div>
         </div>
 

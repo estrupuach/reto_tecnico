@@ -2,6 +2,7 @@ package co.com.reto.tecnico.stepdefinitions;
 
 import co.com.reto.tecnico.model.BusinessUnit;
 import co.com.reto.tecnico.model.LoginModel;
+import co.com.reto.tecnico.model.MeetingModel;
 import co.com.reto.tecnico.tasks.Business;
 import co.com.reto.tecnico.tasks.Login;
 import co.com.reto.tecnico.tasks.Meeting;
@@ -30,10 +31,10 @@ public class StartSharpStepDefinitions {
     }
 
     @When("^he create the business unit and asociate with new meeting$")
-    public void heCreateTheBusinessUnitAndAsociateWithNewMeeting(List<BusinessUnit> businessUnitList) throws Exception {
+    public void heCreateTheBusinessUnitAndAsociateWithNewMeeting(List<BusinessUnit> businessUnitList, List<MeetingModel> meetingModelList) throws Exception {
         OnStage.theActorCalled("Admin").attemptsTo(
                 Business.createBusinessUnit(businessUnitList),
-                Meeting.createMeetingAssociateBusiness()
+                Meeting.createMeetingAssociateBusiness(meetingModelList)
         );
     }
 
